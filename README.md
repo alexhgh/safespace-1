@@ -41,7 +41,7 @@ An anonymous chatting platform for UC Berkeley students suffering from mental he
    ```
    git push origin feature-branch-name
    ```
-   *Issue pull request to merge feature branch to master*
+   #### *Issue pull request to merge feature branch to master*
 
 3. Make changes and then merge to master branch
    ```
