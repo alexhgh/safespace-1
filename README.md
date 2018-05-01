@@ -48,3 +48,15 @@ An anonymous chatting platform for UC Berkeley students suffering from mental he
    ```
    git pull origin master
    ```
+
+9. Push changes to staging and run database migrations
+   ```
+   git push staging master
+   heroku run rake db:migrate --remote staging
+   ```
+
+10. Push to production and run migrations
+   ```
+   git push production master
+   heroku run rake db:migrate --remote production
+   ```

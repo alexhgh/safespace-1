@@ -35,6 +35,7 @@ group :production do
    gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
    gem 'spring'
    gem 'rspec-rails'
+   gem 'capybara'
    gem 'shoulda'
    gem 'faker'
    gem 'factory_bot'
