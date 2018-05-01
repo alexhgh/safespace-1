@@ -1,4 +1,4 @@
-# [Safe Space](https://safespace-staging.herokuapp.com)
+# [SafeSpace](https://safespace-staging.herokuapp.com)
 
 An anonymous chatting platform for UC Berkeley students suffering from mental health
 
@@ -41,15 +41,14 @@ An anonymous chatting platform for UC Berkeley students suffering from mental he
    ```
    git push origin feature-branch-name
    ```
-   #### *Issue pull request to merge feature branch to master*
 
-3. Make changes and then merge to master branch
+3. Make changes before merging to master branch
    ```
    git checkout master
    git merge feature-branch-name
    ```
 
-4. Pull merged changes from remote master branch to local environment
+4. Pull changes from remote master branch to local environment
    ```
    git pull origin master
    ```

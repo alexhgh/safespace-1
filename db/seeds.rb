@@ -1,6 +1,14 @@
 require 'faker'
 
 # Create Users
+admin = User.new(
+  username: 'admin',
+  email: 'admin@berkeley.edu',
+  password: 'password'
+)
+admin.skip_confirmation!
+admin.save!
+
 10.times do
   user = User.new(
     username: Faker::Name.name,
