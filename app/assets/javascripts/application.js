@@ -15,5 +15,69 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require activestorage
+//= require typed.js/lib/typed
 //= require turbolinks
 //= require_tree .
+
+
+// Animate Services
+// var animateServices = function() {
+//   var revealService = function() {
+//     $(this).css({
+//       opacity: 1,
+//       transform: 'scaleX(1) translateY(0)'
+//     });
+//   };
+//
+//   $.each($('.service-box'), revealService);
+// };
+
+
+$(document).on('turbolinks:load', function() {
+
+  // Navbar color change on scroll
+  // $(window).scroll(function() {
+  //   if ($(document).scrollTop() > 50) {
+  //     $('.navbar-default').addClass('scroll');
+  //     $('a.btn.btn-primary.sign-up').addClass('scroll');
+  //   } else {
+  //     $('.navbar-default').removeClass('scroll');
+  //     $('a.btn.btn-primary.sign-up').removeClass('scroll');
+  //   }
+  // });
+
+  // Typed Animation
+  var header = {
+    strings: ["^300 I don't know if I can do this...^100"],
+    typeSpeed: 40,
+    backSpeed: 20,
+    smartBackspace: true,
+    loop: true
+  }
+
+  var typed = new Typed(".header-content .typed", header);
+
+
+  // Nav link ease scroll to section
+  // $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+  //     if (target.length) {
+  //       $('html, body').animate({
+  //         scrollTop: (target.offset().top - 50)
+  //       }, 1500, "easeInOutExpo");
+  //       return false;
+  //     }
+  //   }
+  // });
+
+  // Services ease-in transition on scroll
+  // var scrollDistance = $('#services').offset().top - $(window).height() + 200;
+  // $(window).scroll(function(event) {
+  //   if ($(window).scrollTop() >= scrollDistance) {
+  //     animateServices();
+  //   }
+  // });
+
+});
