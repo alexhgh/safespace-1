@@ -2,7 +2,7 @@ require 'faker'
 
 # Create Users
 admin = User.new(
-  username: 'admin',
+  username: 'Admin',
   email: 'admin@berkeley.edu',
   password: 'password'
 )

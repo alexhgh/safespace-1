@@ -15,9 +15,10 @@ An anonymous chatting platform for UC Berkeley students suffering from mental he
    bundle install --without production
    ```
 
-3. Run migrations
+3. Run migrations and seed data
    ```
    rake db:migrate
+   rake db:seed
    ```
 
 4. Run it locally
