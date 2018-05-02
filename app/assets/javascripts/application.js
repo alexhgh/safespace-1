@@ -10,8 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
 //= require jquery3
+//= require rails-ujs
 //= require popper
 //= require bootstrap-sprockets
 //= require activestorage
@@ -37,39 +37,42 @@ $(document).on('turbolinks:load', function() {
   // Navbar color change on scroll
   // $(window).scroll(function() {
   //   if ($(document).scrollTop() > 50) {
-  //     $('.navbar-default').addClass('scroll');
-  //     $('a.btn.btn-primary.sign-up').addClass('scroll');
+  //     $('.navbar').addClass('scroll');
   //   } else {
   //     $('.navbar-default').removeClass('scroll');
-  //     $('a.btn.btn-primary.sign-up').removeClass('scroll');
   //   }
   // });
 
+  // Nav link ease scroll to section
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 50)
+        }, 1500, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
   // Typed Animation
+  // var header = {
+  //   strings: ["^300 depression^300", "^300 social anxiety^300", "^300 bipolar disorder^300", "^300 attention deficit disorder^300", "^300 obsessive compuslive disorder^300", "^300 autism^300", "^300 insomnia^300"],
+  //   typeSpeed: 40,
+  //   backSpeed: 20,
+  //   smartBackspace: true,
+  //   loop: true
+  // }
+
   var header = {
-    strings: ["^300 depression^300", "^300 social anxiety^300", "^300 bipolar disorder^300", "^300 attention deficit disorder^300", "^300 obsessive compuslive disorder^300", "^300 autism^300", "^300 insomnia^300"],
+    strings: ["^300 An anonymous chat platform empowering UC Berkeley students to share their experiences pursuing mental wellness"],
     typeSpeed: 40,
-    backSpeed: 20,
-    smartBackspace: true,
-    loop: true
   }
 
   var typed = new Typed(".header-content .typed", header);
 
-
-  // Nav link ease scroll to section
-  // $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-  //     var target = $(this.hash);
-  //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-  //     if (target.length) {
-  //       $('html, body').animate({
-  //         scrollTop: (target.offset().top - 50)
-  //       }, 1500, "easeInOutExpo");
-  //       return false;
-  //     }
-  //   }
-  // });
 
   // Services ease-in transition on scroll
   // var scrollDistance = $('#services').offset().top - $(window).height() + 200;
