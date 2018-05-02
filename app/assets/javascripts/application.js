@@ -67,7 +67,7 @@ $(document).on('turbolinks:load', function() {
   // }
 
   var header = {
-    strings: ["^300 An anonymous chat platform empowering UC Berkeley students to share their experiences pursuing mental wellness"],
+    strings: ["^300 Anonymous chat platform empowering UC Berkeley students to share their experiences pursuing mental wellness"],
     typeSpeed: 40,
   }
 
