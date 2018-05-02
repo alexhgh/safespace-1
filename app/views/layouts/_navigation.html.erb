@@ -6,14 +6,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <% if !user_signed_in? %>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<%= root_path %>#mission">Mission</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<%= root_path %>#about">About</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<%= root_path %>#partners">Partners</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="<%= root_path %>#resources">Resources</a></li>
+        <% if current_page?(root_path) && !user_signed_in? %>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mission">Mission</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#partners">Partners</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li>
           <li class="nav-item"><%= link_to "Login", new_user_session_path, class: 'nav-link' %></li>
-          <li class="nav-item"><%= link_to "SIGN UP", new_user_registration_path, class: 'btn btn-info sign-up', style: 'margin-left: 15px;' %></li>
-        <% else %>
+          <li class="nav-item"><%= link_to "SIGN UP", new_user_registration_path, class: 'btn btn-info sign-up', style: 'margin-left: 15px' %></li>
+        <% elsif user_signed_in? %>
           <li class="nav-item"><%= link_to "About", root_path, class: 'nav-link' %>
           <li class="nav-item"><%= link_to "Resources", root_path, class: 'nav-link' %>
           <li class="nav-item"><%= link_to "People", root_path, class: 'nav-link' %>
@@ -30,6 +30,9 @@
               <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav-link' %></li>
             </div>
           </li>
+        <% elsif !current_page?(root_path) && !user_signed_in? %>
+          <li class="nav-item"><%= link_to "Login", new_user_session_path, class: 'nav-link' %></li>
+          <li class="nav-item"><%= link_to "SIGN UP", new_user_registration_path, class: 'btn btn-info sign-up', style: 'margin-left: 15px' %></li>
         <% end %>
       </ul>
     </div>

@@ -3,7 +3,7 @@
     <div class="col-md-4 offset-md-4 col-lg-4 offset-lg-4 devise">
       <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
         <h2 class="text-center">Resend Confirmation Instructions</h2><br>
-        <%= render 'layouts/errors', obj: resource %>
+        <%= render 'devise/shared/errors', obj: resource %>
         <div class="form-group">
           <%= f.label :email %>
           <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email" %>

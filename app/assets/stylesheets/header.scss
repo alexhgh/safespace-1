@@ -1,0 +1,80 @@
+/* -------------------------------- */
+/* HEADER CONTENT
+/* -------------------------------- */
+header {
+  background-repeat: no-repeat !important;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('header.png');
+}
+
+header .header-content {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+header .header-content .header-content-inner h3 {
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+
+/* -------------------------------- */
+/* HEADER MEDIA QUERIES
+/* -------------------------------- */
+@media (max-width: 768px) {
+  header .header-content-inner {
+    margin-top: 125px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 10px;
+  }
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 80px;
+    letter-spacing: 10px;
+    font-weight: 800;
+  }
+  header .header-content .header-content-inner h3 {
+    font-weight: 500;
+    font-size: 36px;
+    max-width: 80%;
+    line-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
