@@ -1,28 +1,32 @@
 /* -------------------------------- */
 /* FLASH MESSAGES
 /* -------------------------------- */
-.alert-success {
+.flash-message {
   color: #ffffff;
   position: absolute;
   font-size: 18px;
-  background-color: #499871;
   border-color: transparent;
   border-radius: 10px;
-  margin-top: 100px;
   width: 90%;
   z-index: 1000;
 }
 
+.alert-success {
+  text-align: center;
+  background-color: #499871;
+}
+
 .alert-warning {
-  color: #ffffff;
-  position: absolute;
-  font-size: 18px;
+  text-align: center;
   background-color: #984949;
-  border-color: transparent;
-  border-radius: 10px;
+}
+
+.position-root {
   margin-top: 100px;
-  width: 90%;
-  z-index: 1000;
+}
+
+.position {
+  margin-top: -60px;
 }
 
 /* -------------------------------- */
