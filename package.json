@@ -1,7 +1,0 @@
-{
-  "name": "safespace",
-  "private": true,
-  "dependencies": {
-    "typed.js": "^2.0.6"
-  }
-}

@@ -15,7 +15,6 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require activestorage
-//= require typed.js/lib/typed
 //= require turbolinks
 //= require_tree .
 
@@ -33,7 +32,7 @@
 // };
 
 
-$(document).on('turbolinks:load', function() {
+$(document).ready(function() {
 
   // Navbar color change on scroll
   // $(window).scroll(function() {
