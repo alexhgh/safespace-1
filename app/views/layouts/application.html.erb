@@ -11,14 +11,9 @@
     <%= javascript_include_tag 'typed.min.js' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <!-- <% if current_page?(root_path) %>
-    <body id="home" class="bg-image">
-  <% else %>
-    <body id="home" class="bg-default">
-  <% end %> -->
   <body id="home">
-    <%= render 'layouts/navigation' %>
     <%= render 'layouts/messages' %>
+    <%= render 'layouts/navigation' %>
     <%= render 'layouts/modal' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
