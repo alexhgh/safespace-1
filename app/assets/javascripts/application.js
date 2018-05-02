@@ -32,7 +32,7 @@
 // };
 
 
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
 
   // Navbar color change on scroll
   // $(window).scroll(function() {
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
   // Typed Animation
   var header = {
-    strings: ["^300 I don't know if I can do this...^100"],
+    strings: ["^300 depression^300", "^300 social anxiety^300", "^300 bipolar disorder^300", "^300 attention deficit disorder^300", "^300 obsessive compuslive disorder^300", "^300 autism^300", "^300 insomnia^300"],
     typeSpeed: 40,
     backSpeed: 20,
     smartBackspace: true,

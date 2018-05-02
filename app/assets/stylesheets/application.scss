@@ -28,21 +28,28 @@ html, body {
 body {
   color: #fff;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* -------------------------------- */
-/* COLORS
+/* BACKGROUNDS & COLORS
 /* -------------------------------- */
 .bg-image {
-  background-image: url('header.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), image-url('header.png');
 }
 
 .bg-default {
-  background-color: #fff;
+  background: #808080;
+}
+
+.white {
+  color: #fff;
 }
 
 .light {
@@ -57,22 +64,44 @@ body {
 /* NAVIGATION
 /* -------------------------------- */
 .navbar {
-  background-color: transparent;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  background-color: #3AD2FC;
+  border-color: rgba(34, 34, 34, 0.05);
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.8s;
 }
 
-.navbar-nav .nav-link {
-  color: #fff;
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link:hover,
+.navbar-expand-lg .navbar-nav .nav-link:active {
+  color: #3AD2FC;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background-color: #88BAD7;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu .nav-link,
+.navbar-expand-lg .navbar-nav .dropdown-menu .nav-link:hover,
+.navbar-expand-lg .navbar-nav .dropdown-menu .nav-link:active {
   color: #fff;
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    background-color: transparent !important;
+    border-color: none;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link,
+  .navbar-expand-lg .navbar-nav .nav-link:hover,
+  .navbar-expand-lg .navbar-nav .nav-link:active {
+    color: #fff;
+  }
 }
 
 
@@ -88,6 +117,18 @@ header .header-content {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
+  z-index: -1;
+}
+
+.header-content h1 {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+
+.header-content h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .typed-cursor {
