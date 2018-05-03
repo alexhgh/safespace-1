@@ -24,21 +24,17 @@ $(document).on('turbolinks:load', function() {
   });
 
   // Typed Animation
-  // var header = {
+  var typed = new Typed("#typed", {
+    strings: ["^300 Anonymous chat platform empowering UC Berkeley students to share their experiences pursuing mental wellness"],
+    typeSpeed: 40,
+  });
+
   //   strings: ["^300 depression^300", "^300 social anxiety^300", "^300 bipolar disorder^300", "^300 attention deficit disorder^300", "^300 obsessive compuslive disorder^300", "^300 autism^300", "^300 insomnia^300"],
   //   typeSpeed: 40,
   //   backSpeed: 20,
   //   smartBackspace: true,
   //   loop: true
-  // }
-
-  var header = {
-    strings: ["^300 Anonymous chat platform empowering UC Berkeley students to share their experiences pursuing mental wellness"],
-    typeSpeed: 40,
-  }
-
-  var typed = new Typed(".header-content .typed", header);
-
+  
 
   // Animate Steps
   // var animateSteps = function() {
