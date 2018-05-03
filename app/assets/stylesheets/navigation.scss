@@ -2,6 +2,7 @@
 /* NAVIGATION CONTENT
 /* -------------------------------- */
 .navbar {
+  // position: absolute;
   background-color: #3AD2FC;
   border-color: rgba(34, 34, 34, 0.05);
   -webkit-transition: all 0.35s;
@@ -44,7 +45,7 @@
 }
 
 .navbar .navbar-toggler-icon {
-  
+
 }
 
 .navbar .navbar-toggler:focus {
@@ -58,6 +59,7 @@
 /* -------------------------------- */
 @media (min-width: 768px) {
   .navbar {
+    // background-color: transparent;
     background-color: #1D48A7;
     border-color: none;
   }

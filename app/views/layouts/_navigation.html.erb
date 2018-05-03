@@ -8,9 +8,8 @@
       <ul class="navbar-nav ml-auto">
         <% if current_page?(root_path) && !user_signed_in? %>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#mission">Mission</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">How It Works</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#partners">Partners</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li>
           <li class="nav-item"><%= link_to "Login", new_user_session_path, class: 'nav-link' %></li>
           <li class="nav-item"><%= link_to "SIGN UP", new_user_registration_path, class: 'btn btn-info sign-up', style: 'margin-left: 15px' %></li>
         <% elsif user_signed_in? %>
