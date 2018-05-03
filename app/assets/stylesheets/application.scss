@@ -36,14 +36,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-section {
-  padding: 100px 0;
+h1, h2, h4, h5, h6 {
+  color: #222;
 }
 
 p {
+  color: #222;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+section {
+  padding: 100px 0;
 }
 
 .light {
