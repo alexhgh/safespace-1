@@ -1,6 +1,6 @@
 # [SafeSpace](https://safespace-staging.herokuapp.com)
 
-An anonymous chatting platform for UC Berkeley students suffering from mental health
+An anonymous chat platform empowering UC Berkeley students to share their experiences pursuing mental wellness
 
 
 ## Getting Started
