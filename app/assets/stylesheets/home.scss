@@ -119,6 +119,7 @@ hr {
   -moz-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
 h3.step-title {
   color: #222;
   font-size: 40px;
@@ -129,6 +130,22 @@ p.step-description {
   color: #222;
   font-size: 22px;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  h3.step-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  i.fa.fa-list-alt.fa-5x.blue,
+  i.fa.fa-users.fa-5x.blue,
+  i.fa.fa-comments.fa-5x.blue {
+    font-size: 70px;
+  }
+  p.step-description {
+    font-size: 20px;
+    margin-top: 15px;
+  }
 }
 
 

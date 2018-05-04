@@ -71,4 +71,4 @@ puts "#{User.count} users counted"
 
 
 # Create Admin User for Active Admin
-AdminUser.create!(name: 'Admin', email: 'admin@berkeley.edu', password: 'password', password_confirmation: 'password') if Rails.env.development? || Rails.env.staging?
+AdminUser.create!(name: 'Admin', email: 'admin@berkeley.edu', password: 'password', password_confirmation: 'password') if Rails.env.development?
