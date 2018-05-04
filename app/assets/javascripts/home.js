@@ -34,26 +34,25 @@ $(document).on('turbolinks:load', function() {
   //   backSpeed: 20,
   //   smartBackspace: true,
   //   loop: true
-  
+
 
   // Animate Steps
-  // var animateSteps = function() {
-  //   var revealStep= function() {
-  //     $(this).css({
-  //       opacity: 1,
-  //       transform: 'scaleX(1) translateY(0)'
-  //     });
-  //   };
-  //
-  //   $.each($('.step-box'), revealStep);
-  // };
+  var animateSteps = function() {
+    var revealStep= function() {
+      $(this).css({
+        opacity: 1,
+        transform: 'scaleX(1) translateY(0)'
+      });
+    };
+    $.each($('.step'), revealStep);
+  };
 
   // Steps ease-in transition on scroll
-  // var scrollDistance = $('#steps').offset().top - $(window).height() + 200;
-  // $(window).scroll(function(event) {
-  //   if ($(window).scrollTop() >= scrollDistance) {
-  //     animateSteps();
-  //   }
-  // });
+  var scrollDistance = $('#steps').offset().top - $(window).height() + 200;
+  $(window).scroll(function(event) {
+    if ($(window).scrollTop() >= scrollDistance) {
+      animateSteps();
+    }
+  });
 
 });

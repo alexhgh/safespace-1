@@ -2,15 +2,24 @@
 /* FOOTER SECTION
 /* -------------------------------- */
 footer {
-  padding: 40px;
-  display: table;
   color: #fff;
-  text-align: center;
+  height: 12%;
+  position: absolute;
+  width: 100%;
+}
+
+footer div {
+  height: 100%;
+}
+
+footer .row > div {
+  width: 100%;
+  display: table;
 }
 
 footer p {
-  width: 100%;
   font-size: 18px;
+  text-align: center;
   display: table-cell;
   vertical-align: middle;
 }

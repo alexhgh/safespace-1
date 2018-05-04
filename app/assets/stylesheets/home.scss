@@ -1,18 +1,193 @@
 /* -------------------------------- */
+/* LANDING PAGE SECTIONS
+/* -------------------------------- */
+section {
+  padding-top: 100px;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+hr {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  h1.section-heading.display-4 {
+    font-size: 46px;
+  }
+}
+
+
+/* -------------------------------- */
+/* QUOTE SECTION
+/* -------------------------------- */
+#quote {
+  background-color: #25A2B7;
+}
+
+.quote-content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.fa.fa-quote-left {
+  font-size: 48px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.fa.fa-quote-right {
+  font-size: 48px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.quote-content .quote-text {
+  color: #fff;
+  font-style: oblique;
+  line-height: 1.5;
+}
+
+.quote-content .quote-signature {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .fa.fa-quote-left {
+    font-size: 40px;
+  }
+  .fa.fa-quote-right {
+    font-size: 40px;
+  }
+  .quote-content .quote-text {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .quote-content .quote-signature {
+    font-size: 18px;
+    margin-top: -10px
+  }
+}
+
+
+/* -------------------------------- */
 /* MISSION SECTION
 /* -------------------------------- */
+.mission-header {
+  color: #222;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mission-text {
+  color: #222;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .mission-header {
+    font-size: 20px;
+  }
+  .mission-text {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}
 
 
 /* -------------------------------- */
 /* HOW IT WORKS SECTION
 /* -------------------------------- */
+.step {
+  opacity: 0;
+  max-width: 400px;
+  margin: 50px auto 0;
+  -webkit-transform: scaleX(0.9) translateY(3rem);
+  -moz-transform: scaleX(0.9) translateY(3rem);
+  transform: scaleX(0.9) translateY(3rem);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+h3.step-title {
+  color: #222;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+p.step-description {
+  color: #222;
+  font-size: 22px;
+  margin-top: 20px;
+}
 
 
 /* -------------------------------- */
 /* PARTNERS SECTION
 /* -------------------------------- */
+.partner-logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .partner-logo {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+  .partner-logo:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+  }
+}
 
 
 /* -------------------------------- */
 /* CONTACT SECTION
 /* -------------------------------- */
+h1.contact-heading {
+  text-transform: uppercase;
+}
+
+p.contact-section {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h1.resources-heading {
+  text-transform: uppercase;
+}
+
+p.resources-section {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  h1.contact-heading {
+    margin-top: -50px;
+  }
+  p.contact-section {
+    font-size: 16px;
+  }
+  h1.resources-heading {
+    margin-top: 20px;
+  }
+  p.resources-section {
+    font-size: 16px;
+  }
+}
