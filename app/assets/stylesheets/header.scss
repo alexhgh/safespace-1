@@ -35,6 +35,20 @@ header .header-content .header-content-inner h3 {
   padding: 0 10px;
 }
 
+.btn-primary.community,
+.btn-primary.community:visited {
+  border-radius: 0;
+  border: 2px solid white !important;
+  background-color: #1D48A7 !important;
+}
+
+.btn-primary.community:hover,
+.btn-primary.community:active,
+.btn-primary.community:focus {
+  border: 2px solid white !important;
+  background-color: #143275 !important;
+}
+
 
 /* -------------------------------- */
 /* HEADER MEDIA QUERIES

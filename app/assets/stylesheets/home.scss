@@ -154,31 +154,36 @@ p.step-description {
 
 
 /* -------------------------------- */
-/* CONTACT SECTION
+/* CONNECT / CRISIS SECTION
 /* -------------------------------- */
-p.contact-section {
-  font-size: 20px;
+.connect-secton {
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
-p.resources-section {
+.connect-section p {
   font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+}
+
+.crisis p {
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
-  h1.contact-heading {
+  .connect h1 {
     margin-top: -50px;
   }
-  p.contact-section {
+  .connect-section {
+    margin-bottom: 50px;
+  }
+  .connect-section p {
     font-size: 16px;
   }
-  h1.resources-heading {
+  .crisis h1 {
     margin-top: 20px;
   }
-  p.resources-section {
+  .crisis p {
     font-size: 16px;
   }
 }
