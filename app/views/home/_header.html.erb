@@ -4,7 +4,9 @@
       <h1><span class="light">SAFE</span><span class="text-white">SPACE</span></h1>
       <h3><span id="typed" class="text-white"></span></h3>
       <!-- <h3>Anonymous chat platform for UC Berkeley students suffering from <span id="typed"></span></h3> -->
-      <%= link_to 'JOIN THE COMMUNITY', new_user_registration_path, class: 'btn btn-primary community' %>
+      <% if !user_signed_in? %>
+        <%= link_to 'JOIN THE COMMUNITY', new_user_registration_path, class: 'btn btn-primary community' %>
+      <% end %>
     </div>
   </div>
 </header>
