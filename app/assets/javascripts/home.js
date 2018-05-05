@@ -1,13 +1,13 @@
 $(document).on('turbolinks:load', function() {
 
   // Navbar color change on scroll
-  // $(window).scroll(function() {
-  //   if ($(document).scrollTop() > 50) {
-  //     $('.navbar').addClass('scroll');
-  //   } else {
-  //     $('.navbar').removeClass('scroll');
-  //   }
-  // });
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('.navbar').addClass('scroll');
+    } else {
+      $('.navbar').removeClass('scroll');
+    }
+  });
 
   // Nav link ease scroll to section
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -44,11 +44,13 @@ $(document).on('turbolinks:load', function() {
         transform: 'scaleX(1) translateY(0)'
       });
     };
+
     $.each($('.step'), revealStep);
   };
 
   // Steps ease-in transition on scroll
   var scrollDistance = $('#steps').offset().top - $(window).height() + 200;
+  
   $(window).scroll(function(event) {
     if ($(window).scrollTop() >= scrollDistance) {
       animateSteps();
