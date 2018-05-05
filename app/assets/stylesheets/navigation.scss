@@ -2,8 +2,7 @@
 /* NAVIGATION CONTENT
 /* -------------------------------- */
 .navbar {
-  background-color: #3AD2FC;
-  border-color: rgba(34, 34, 34, 0.05);
+  background-color: #1D48A7;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.8s;
@@ -19,7 +18,7 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: #1D48A7;
+  color: #3AD2FC;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:active,
@@ -63,17 +62,8 @@
 /* NAVIGATION MEDIA QUERIES
 /* -------------------------------- */
 @media (min-width: 768px) {
-  .navbar {
-    background-color: #1D48A7;
-  }
   .navbar.transparent {
     background-color: transparent;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #3AD2FC;
-  }
-  .navbar-expand-lg .navbar-nav .dropdown-menu .nav-link:hover {
-    color: #3AD2FC;
   }
   .navbar.scroll {
     background-color: #1D48A7;
