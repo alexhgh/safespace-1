@@ -152,12 +152,19 @@ p.step-description {
 /* -------------------------------- */
 /* PARTNERS SECTION
 /* -------------------------------- */
+h1.section-heading.display-4.partners {
+  margin-bottom: 50px;
+}
+
 .partner-logo {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
+  h1.section-heading.display-4.partners {
+    margin-bottom: 70px;
+  }
   .partner-logo {
     filter: gray;
     -webkit-filter: grayscale(1);
