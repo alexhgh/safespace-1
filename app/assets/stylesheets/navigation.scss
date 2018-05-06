@@ -56,6 +56,11 @@
   background-color: #143275;
 }
 
+.navbar .navbar-toggler:active,
+.navbar .navbar-toggler:focus {
+  background-color: #1D48A7;
+}
+
 .navbar .navbar-toggler:focus {
   outline: none !important;
   box-shadow: none;
