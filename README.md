@@ -17,8 +17,8 @@ An anonymous chat platform empowering UC Berkeley students to share their experi
 
 3. Run migrations and seed data
    ```
-   rake db:migrate
-   rake db:seed
+   rails db:migrate
+   rails db:seed
    ```
 
 4. Run it locally
@@ -40,7 +40,7 @@ An anonymous chat platform empowering UC Berkeley students to share their experi
 
 2. Push changes to remote branch and create pull request
    ```
-   git push origin feature-branch-name
+   git push -u origin feature-branch-name
    ```
 
 3. Make changes before merging to master branch
@@ -57,5 +57,5 @@ An anonymous chat platform empowering UC Berkeley students to share their experi
 5. Push changes to staging and run database migrations
    ```
    git push staging master
-   heroku run rake db:migrate --remote staging
+   heroku run rails db:migrate --remote staging
    ```

@@ -29,13 +29,6 @@ $(document).on('turbolinks:load', function() {
     typeSpeed: 40,
   });
 
-  //   strings: ["^300 depression^300", "^300 social anxiety^300", "^300 bipolar disorder^300", "^300 attention deficit disorder^300", "^300 obsessive compuslive disorder^300", "^300 autism^300", "^300 insomnia^300"],
-  //   typeSpeed: 40,
-  //   backSpeed: 20,
-  //   smartBackspace: true,
-  //   loop: true
-
-
   // Animate Steps
   var animateSteps = function() {
     var revealStep= function() {
@@ -50,7 +43,7 @@ $(document).on('turbolinks:load', function() {
 
   // Steps ease-in transition on scroll
   var scrollDistance = $('#steps').offset().top - $(window).height() + 200;
-  
+
   $(window).scroll(function(event) {
     if ($(window).scrollTop() >= scrollDistance) {
       animateSteps();
