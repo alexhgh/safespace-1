@@ -37,21 +37,7 @@ student = User.new(
 student.skip_confirmation!
 student.save!
 
-5.times do
-  user = User.new(
-    username: Faker::HarryPotter.character,
-    email: Faker::Name.first_name.downcase + '@berkeley.edu',
-    password: Faker::Lorem.characters(10),
-    role: 'student',
-    offline: true,
-    block_count: 1,
-    banned: false
-  )
-  user.skip_confirmation!
-  user.save!
-end
-
-5.times do
+10.times do
   user = User.new(
     username: Faker::HarryPotter.character,
     email: Faker::Name.first_name.downcase + '@berkeley.edu',
@@ -64,7 +50,6 @@ end
   user.skip_confirmation!
   user.save!
 end
-
 
 puts "Seed finished"
 puts "#{User.count} users counted"

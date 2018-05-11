@@ -3,6 +3,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable
 
+  has_many :messages
+  has_many :conversations, foreign_key: :sender_id
+
   validate :berkeley_email
   validates :username, presence: true
   validates_uniqueness_of :username, case_sensitive: false

@@ -1,8 +1,4 @@
-<% if current_page?(root_path) %>
-<nav class="navbar transparent navbar-expand-lg navbar-light fixed-top">
-<% else %>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-<% end %>
+<nav class="<%= current_page?(root_path) ? 'navbar transparent' : 'navbar' %> navbar-expand-lg navbar-light fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand js-scroll-trigger" href="<%= root_path %>#home"><%= image_tag('logo.png', size: '75x59') %></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +15,7 @@
         <% elsif user_signed_in? %>
           <li class="nav-item"><%= link_to "About", about_path, class: 'nav-link' %>
           <li class="nav-item"><%= link_to "Community", root_path, class: 'nav-link' %>
-          <li class="nav-item"><%= link_to "Chat", root_path, class: 'nav-link' %>
+          <li class="nav-item"><%= link_to "Chat", chat_path, class: 'nav-link' %>
           <li class="nav-item"><%= link_to "Resources", resources_path, class: 'nav-link' %>
           <li class="nav-item"><%= link_to "Contact", contact_path, class: 'nav-link' %>
           <li class="nav-item dropdown">

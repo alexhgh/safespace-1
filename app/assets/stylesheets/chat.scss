@@ -1,3 +1,88 @@
 /* -------------------------------- */
 /* CHAT PAGE
 /* -------------------------------- */
+.friends-box {
+  margin-bottom: 20px;
+}
+
+.friends {
+  text-transform: uppercase;
+}
+
+div.card-body.users-list ul {
+  padding-left: 0px;
+  list-style: none;
+}
+
+#conversations-list {
+  list-style: none;
+}
+
+.conversation-box {
+  margin-bottom: 20px;
+}
+
+.conversation-header {
+  margin-top: 20px;
+}
+
+.messages-list {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+li.message {
+  list-style: none;
+}
+
+.message-sent {
+  position: relative;
+  color: #fff;
+  background-color: #0076FF;
+  border-radius: 5px;
+  list-style: none;
+  margin: 5px 20px;
+  padding: 10px;
+  float: right;
+}
+
+.time-sent {
+  position: relative;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.message-received {
+  color: #222;
+  background-color: #8E8E93;
+  border-radius: 5px;
+  list-style: none;
+  margin: 5px 20px;
+  padding: 10px;
+  float: left;
+}
+
+.time-received {
+  position: relative;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  float: right;
+}
+
+.message-form {
+  margin-top: 20px;
+}
+
+.message-form:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+
+.message-send {
+  margin-top: 10px;
+  float: right;
+}
