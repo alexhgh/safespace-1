@@ -1,11 +1,11 @@
 /* -------------------------------- */
 /* CHAT PAGE
 /* -------------------------------- */
-.friends-box {
+.users-box {
   margin-bottom: 20px;
 }
 
-.friends {
+.users {
   text-transform: uppercase;
 }
 
@@ -22,14 +22,20 @@ div.card-body.users-list ul {
   margin-bottom: 20px;
 }
 
-.conversation-header {
-  margin-top: 20px;
+div.card-header.conversation-header {
+  height: 70px;
+  line-height: 50px;
+  text-align: center;
 }
 
 .messages-list {
-  max-height: 200px;
+  max-height: 400px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.messages-list > ul {
+  padding-left: 20px;
 }
 
 li.message {
@@ -37,7 +43,6 @@ li.message {
 }
 
 .message-sent {
-  position: relative;
   color: #fff;
   background-color: #0076FF;
   border-radius: 5px;
@@ -45,24 +50,26 @@ li.message {
   margin: 5px 20px;
   padding: 10px;
   float: right;
+  max-width: 325px;
 }
 
 .time-sent {
   position: relative;
   font-size: 10px;
-  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 15px;
-  float: left;
+  float: right;
 }
 
 .message-received {
   color: #222;
-  background-color: #8E8E93;
+  background-color: #D3D3D3;
   border-radius: 5px;
   list-style: none;
   margin: 5px 20px;
   padding: 10px;
   float: left;
+  max-width: 325px;
 }
 
 .time-received {
@@ -70,7 +77,7 @@ li.message {
   font-size: 10px;
   margin-left: 20px;
   margin-bottom: 15px;
-  float: right;
+  float: left;
 }
 
 .message-form {
@@ -85,4 +92,26 @@ li.message {
 .message-send {
   margin-top: 10px;
   float: right;
+}
+
+
+/* -------------------------------- */
+/* CHAT MEDIA QUERIES
+/* -------------------------------- */
+@media (max-width: 768px) {
+  .conversation-box {
+    margin-left: -38px;
+  }
+  .messages-list {
+    max-height: 250px;
+  }
+  .messages-list > ul {
+    padding-left: 0px;
+  }
+  .message-sent {
+    max-width: 200px;
+  }
+  .message-received {
+    max-width: 200px;
+  }
 }

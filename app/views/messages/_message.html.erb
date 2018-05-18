@@ -1,8 +1,12 @@
 <li class="message">
   <div class="row">
     <div class="message-body">
-      <span class="<%= user.id == message.user_id ? 'message-sent' : 'message-received' %>"><%= message.body %></span><br>
-      <span class="<%= user.id == message.user_id ? 'time-sent' : 'time-received' %>"><%= message.created_at.strftime('%l:%M %p') %></span>
+      <span class="<%= user.id == message.user_id ? 'message-sent' : 'message-received' %>">
+        <%= message.body %>
+      </span><br>
+      <span class="<%= user.id == message.user_id ? 'time-sent' : 'time-received' %>">
+        <%= message.created_at.strftime('%l:%M %p') %>
+      </span>
     </div>
   </div>
 </li>
