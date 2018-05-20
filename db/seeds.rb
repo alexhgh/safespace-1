@@ -1,41 +1,17 @@
 require 'faker'
 
 # Create Users
-admin = User.new(
-  username: 'Admin',
-  email: 'admin@berkeley.edu',
-  password: 'password',
-  role: 'admin',
-  offline: false,
-  block_count: 0,
-  banned: false
-)
+student = User.new(username: 'Student', email: 'student@berkeley.edu', password: 'password', role: 'student', offline: true, block_count: 1, banned: false)
+student.skip_confirmation!
+student.save!
+
+admin = User.new(username: 'Admin', email: 'admin@berkeley.edu', password: 'password', role: 'admin', offline: false, block_count: 0, banned: false)
 admin.skip_confirmation!
 admin.save!
 
-counselor = User.new(
-  username: 'Counselor',
-  email: 'counselor@berkeley.edu',
-  password: 'password',
-  role: 'counselor',
-  offline: false,
-  block_count: 0,
-  banned: false
-)
+counselor = User.new( username: 'Counselor', email: 'counselor@berkeley.edu', password: 'password', role: 'counselor', offline: false, block_count: 0, banned: false)
 counselor.skip_confirmation!
 counselor.save!
-
-student = User.new(
-  username: 'Student',
-  email: 'student@berkeley.edu',
-  password: 'password',
-  role: 'student',
-  offline: true,
-  block_count: 1,
-  banned: false
-)
-student.skip_confirmation!
-student.save!
 
 10.times do
   user = User.new(

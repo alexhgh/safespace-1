@@ -1,6 +1,6 @@
 require 'rails_helper'
-require 'factories'
+require 'factories/user'
 
 RSpec.describe Conversation, type: :model do
-  let(:student) { FactoryBot.create(:user) }
+  let(:student) { FactoryBot.create(:student) }
 end

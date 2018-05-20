@@ -1,18 +1,18 @@
 require 'rails_helper'
-require 'factories'
+require 'factories/user'
 
 RSpec.describe ChatController, type: :controller do
-  let(:student) { FactoryBot.create(:user) }
+  let(:user) { FactoryBot.create(:user) }
 
   before do
-    student.confirm
-    sign_in student
+    user.confirm
+    sign_in user
   end
 
   describe "GET #index" do
     it "returns http success" do
       get :index
-      expect(response).to have_http_status(:success)
+      expect(response).to be_successful
     end
   end
 
