@@ -1,6 +1,13 @@
 require 'rails_helper'
+require 'factories'
 
 RSpec.describe ContactController, type: :controller do
+  let(:student) { FactoryBot.create(:user) }
+
+  before do
+    student.confirm
+    sign_in student
+  end
 
   describe "GET #index" do
     it "returns http success" do

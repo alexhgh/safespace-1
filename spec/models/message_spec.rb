@@ -1,5 +1,6 @@
 require 'rails_helper'
+require 'factories'
 
 RSpec.describe Message, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:student) { FactoryBot.create(:user) }
 end
